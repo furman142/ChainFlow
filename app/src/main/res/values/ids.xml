@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="crypto_name" type="id" />
+    <item name="crypto_symbol" type="id" />
+    <item name="crypto_price" type="id" />
+    <item name="crypto_change" type="id" />
+    <item name="crypto_icon" type="id" />
+</resources>

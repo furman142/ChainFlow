@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <!-- Logo and Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <!-- Logo Placeholder -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+        android:contentDescription="@string/logo"
+        android:layout_marginEnd="8dp" />
+
+        <!-- Header Text -->
+        <TextView
+            android:id="@+id/header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/explore_the_world_of_digital_assets"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <!-- Horizontal Buttons: Login and Sign Up -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Log In"
+            android:backgroundTint="#F3F3F3"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginEnd="8dp"
+            android:elevation="2dp" />
+
+        <Button
+            android:id="@+id/signup_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sign Up"
+            android:backgroundTint="#FFD700"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"
+            android:elevation="2dp" />
+    </LinearLayout>
+
+    <!-- Watchlist and Coin Tabs -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/watchlist_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Watchlist"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:background="@android:color/transparent"
+            android:layout_marginEnd="16dp" />
+
+        <Button
+            android:id="@+id/coin_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/coin"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#A4A4A4"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+    <!-- RecyclerView Section -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF" />
+
+    <!-- Bottom Navigation Placeholder -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/markets_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/markets"
+            android:textSize="14sp"
+            android:textColor="#A4A4A4"
+            android:layout_marginEnd="16dp" />
+
+        <TextView
+            android:id="@+id/trade_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trade"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginEnd="16dp" />
+
+        <TextView
+            android:id="@+id/portfolio_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Portfolio"
+            android:textSize="14sp"
+            android:textColor="#A4A4A4" />
+    </LinearLayout>
+</LinearLayout>

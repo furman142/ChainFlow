@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:background="#F3F4F6">
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#2D3436"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Username Field -->
+    <EditText
+        android:id="@+id/Username_Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/username"
+        android:background="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="text"
+        android:textColor="#2D3436"
+        android:textColorHint="#A4A4A4"
+        android:autofillHints="username" />
+
+    <!-- Password Field -->
+    <EditText
+        android:id="@+id/passwordlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/passwordlogin"
+        android:background="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="textPassword"
+        android:textColor="#2D3436"
+        android:textColorHint="#A4A4A4"
+        android:autofillHints="password" />
+
+    <!-- Email Field -->
+    <EditText
+        android:id="@+id/emaillogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:background="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"
+        android:inputType="textEmailAddress"
+        android:textColor="#2D3436"
+        android:textColorHint="#A4A4A4"
+        android:autofillHints="emailAddress" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:backgroundTint="#0984E3"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

@@ -1,0 +1,76 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <!-- Icon ImageView -->
+        <ImageView
+            android:id="@+id/crypto_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_crypto_default" />
+
+        <!-- Text Information Container -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
+
+            <!-- Crypto Name -->
+            <TextView
+                android:id="@+id/crypto_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crypto Name"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Crypto Symbol -->
+            <TextView
+                android:id="@+id/crypto_symbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Symbol"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Price and Change Container -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="end">
+
+            <!-- Price -->
+            <TextView
+                android:id="@+id/crypto_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$0.00"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- 24h Change -->
+            <TextView
+                android:id="@+id/crypto_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+0.00%"
+                android:textSize="14sp"
+                android:textColor="@android:color/holo_green_dark" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

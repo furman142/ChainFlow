@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F4F6"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/Signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Welcome Text -->
+        <TextView
+            android:id="@+id/tv_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#2D3436"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="200dp"
+
+            />
+
+        <!-- Username Field -->
+        <EditText
+            android:id="@+id/username"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+        android:inputType="text"
+        android:textColor="#2D3436"
+        android:textColorHint="#A4A4A4" />
+
+        <!-- Password Field -->
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="textPassword"
+            android:textColor="#2D3436"
+            android:textColorHint="#A4A4A4" />
+
+        <!-- ID Field -->
+        <EditText
+            android:id="@+id/id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="number"
+            android:textColor="#2D3436"
+            android:textColorHint="#A4A4A4" />
+
+        <!-- Email Field -->
+        <EditText
+            android:id="@+id/Emailtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp"
+            android:inputType="textEmailAddress"
+            android:textColor="#2D3436"
+            android:textColorHint="#A4A4A4" />
+
+        <!-- Sign-Up Button -->
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_upbtntext"
+            android:backgroundTint="#0984E3"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"
+            />
+
+    </LinearLayout>
+</ScrollView>
